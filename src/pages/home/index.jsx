@@ -1,9 +1,10 @@
 import { useState } from "react";
+import "./index.css";
 
 export const Home = () => {
   const [name, setName] = useState("");
   return (
-    <div>
+    <div className="border">
       <input
         type="text"
         id="name"

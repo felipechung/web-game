@@ -1,0 +1,11 @@
+.border {
+border-radius: 12px;
+height: 200px;
+width: 400px; 
+padding: 20px;   
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
