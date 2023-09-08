@@ -3,7 +3,7 @@ import useWebSocket, { ReadyState } from "react-use-websocket";
 
 export const Room = () => {
   const { lastMessage, readyState, sendMessage } = useWebSocket(
-    "ws://40e6-168-0-112-246.ngrok-free.app/ws/game/",
+    import.meta.env.WEB_SOCKET,
     {
       onMessage: (e) => console.log(e),
     }
@@ -18,11 +18,6 @@ export const Room = () => {
         Click Me to send
       </button>
       {lastMessage ? <span>Last message: {lastMessage.data}</span> : null}
-      <ul>
-        {/* {messageHistory.map((message, idx) => (
-          <span key={idx}>{message ? message.data : null}</span>
-        ))} */}
-      </ul>
     </div>
   );
 };

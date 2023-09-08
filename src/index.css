@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #206BEA;
+  background-color: #206bea;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,16 +43,39 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #206aea;
   cursor: pointer;
   transition: border-color 0.25s;
+  flex: 1;
 }
 button:hover {
   border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
+}
+
+input {
+  background: #f4f4f4;
+  color: black;
+  width: 100%;
+  height: 44px;
+  border: 2px solid #01a4ff;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+input:focus {
+  border: 3px solid #01a4ff;
+  background: #f4f4f4;
+  outline: none;
+}
+
+label {
+  color: black;
+  font-weight: 600;
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,11 +1,24 @@
-.border {
-border-radius: 12px;
-height: 200px;
-width: 400px; 
-padding: 20px;   
-background-color: white;
-display: flex;
-flex-direction: column;
-justify-content: center;
+.inputContainer {
+  border: 4px solid #01a4ff;
+  border-radius: 12px;
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.buttonContainer {
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 8px;
 }
